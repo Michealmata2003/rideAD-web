@@ -37,12 +37,12 @@ const FAQs = () => {
    return (
       <div className='bg-Fade py-4'>
          <div className="component">
-            <div className='m-auto text-center justify-center w-2/3'>
-               <h2 className='text-3xl font-bold w-1/3 m-auto text-center py-4'>Frequently Asked
+            <div className='m-auto text-center justify-center w-full md:w-2/3'>
+               <h2 className='text-3xl font-bold w-full lg:w-1/3 m-auto text-center py-4'>Frequently Asked
                   Questions</h2>
-                  <p className='text-[18px] py-4 w-2/3 m-auto text-center'>The following are some of the most frequently asked questions we've received, along with our answers.</p>
+                  <p className='text-[18px] py-4 mdl:w-2/3 m-auto text-center'>The following are some of the most frequently asked questions we've received, along with our answers.</p>
             </div>
-            <div className='grid grid-cols-2 gap-[20px] py-4'>
+            <div className='grid mdl:grid-cols-2 gap-[20px] py-4'>
                {
                   clientData.map((data,index) => (
                      <div key={index} >

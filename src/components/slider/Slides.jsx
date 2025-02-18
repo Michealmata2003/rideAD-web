@@ -6,7 +6,7 @@ const Slides = () => {
   const slideLength = slides.length;
 
   const autoScroll = true;
-  const intervalTime = 1000;
+  const intervalTime = 100000;
   const slideInterval = useRef(null);
 
   const nextSlide = () => {

@@ -11,11 +11,11 @@ const Chat = () => {
     return (
         <div>
             <div className="component">
-                <div className='flex items-center justify-between'>
-                    <div className='bg-Fade p-8 rounded-2xl w-1/2'>
+                <div className='mdl:flex items-center justify-between'>
+                    <div className='bg-Fade p-8 rounded-2xl w-full mdl:w-1/2'>
                         <div>
                             <h6 className='text-[#FFA500] text-[18px] font-semibold'>Get in touch with us</h6>
-                            <h2 className='text-3xl font-bold w-1/2 py-4'>Have Questions? Chat
+                            <h2 className='text-3xl font-bold w-full md:w-1/2 py-4'>Have Questions? Chat
                                 With Us!</h2>
                             <p className='text-[18px] pb-6 border-b-2 border-[#EBEBEB]'>Have questions or feedback? we are here to help. Send
                                 us a message, and we will respond with 24 hours</p>
@@ -36,7 +36,7 @@ const Chat = () => {
                         </div>
                     </div>
 
-                    <div className=' p-8 w-1/2' >
+                    <div className='p-2 mdl:p-8  w-full mdl:w-1/2' >
                         <div className='w-full'>
                             <img src={image} alt="image" className='w-[100%]' />
 

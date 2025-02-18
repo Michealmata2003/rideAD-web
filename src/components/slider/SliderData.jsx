@@ -19,11 +19,13 @@ export const slides = [
         nav: <Navbar />,
         text: <SecondHeroText />
     },
+   
+
     {
         id: 3,
         background: herothree,
         nav: <Navbar />,
         text: <ThirdHeroText />
     },
-    
+
 ]

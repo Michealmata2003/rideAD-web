@@ -6,15 +6,15 @@ const Footer = () => {
     return (
         <div>
             <div className="component">
-                <div className='flex gap-[1.5rem] items-center p-8 border-b-2 border-[#EBEBEB]'>
-                    <div className='w-1/2 '>
+                <div className='mdl:flex gap-[1.5rem] items-center p-8 border-b-2 border-[#EBEBEB]'>
+                    <div className='mdl:w-1/2 '>
                         <img src={logo} alt="" />
 
                         <h6 className='font-normal text-[18px] pt-4'>A mobility techAD startup that leverages conventional modes of transportation
                             to accentuate brands’ exposure and drive high conversion rates on advertising spend.</h6>
 
                     </div>
-                    <div className='grid grid-cols-3 w-4/5'>
+                    <div className='grid  mdl:grid-cols-3 w-4/5'>
                         <div>
                             <h4 className='font-semibold text-xl pb-2'>Company</h4>
                             <ul>

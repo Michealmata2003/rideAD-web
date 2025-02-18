@@ -11,7 +11,7 @@ const Brands = () => {
     <div className='w-full bg-Fade py-[2rem]'>
       <div className="component">
         <h5 className='text-[32px] font-semibold text-center pb-8'>Trusted by <span className='text-DeepBlue'>thousands</span> of brands</h5>
-        <div className='flex gap-[20px] m-auto justify-center'>
+        <div className='flex flex-wrap gap-[20px] m-auto justify-center'>
           <img src={brandA} alt="brands" />
           <img src={brandB} alt="brands" />
           <img src={brandC} alt="brands" />
