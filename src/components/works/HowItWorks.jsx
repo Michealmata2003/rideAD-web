@@ -12,8 +12,8 @@ const HowItWorks = () => {
           <h4 className='text-4xl font-bold py-2'>How it Works</h4>
           <h6 className='font-semibold text-[18px] py-6'>Get Started with this easy Steps</h6>
         </div>
-        <div className='flex gap-[30px]'>
-          <div className='bg-[#CBF0FF] rounded-xl p-[2rem] w-1/2 h-[100%]'>
+        <div className='mdl:flex gap-[30px] '>
+          <div className='bg-[#CBF0FF] rounded-xl p-[2rem] mdl:w-1/2 h-[100%]'>
             <h2 className='text-3xl font-bold py-2'>CLIENT</h2>
             {
               clientData.map((info, index) => (
@@ -29,7 +29,7 @@ const HowItWorks = () => {
 
           </div>
 
-          <div className='bg-[#FFEECF] rounded-xl p-[3rem] w-1/2'>
+          <div className='bg-[#FFEECF] my-4 rounded-xl p-[3rem] mdl:w-1/2'>
             <h2 className='text-3xl font-bold py-2'>USERS</h2>
 
             {

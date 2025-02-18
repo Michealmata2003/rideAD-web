@@ -1,5 +1,4 @@
-
-import './App.css'
+import Blog from './pages/Blog';
 import Hero from './pages/Hero';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -10,6 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Hero />} />
+        <Route path='/blog' element={<Blog />}/>
       </Routes>
     </Router>
   )
