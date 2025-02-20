@@ -8,7 +8,7 @@ const Read = () => {
   return (
     <div>
       <div className="component">
-        <div className='grid grid-cols-1  mdl:grid-cols-3  justify-center center '>
+        <div className='grid grid-cols-1  mdl:grid-cols-3  justify-center p-2 '>
           <div className='w-full mdl:w-3/4 m-auto justify-center'>
             <img className='w-full' src={read1} alt="" />
             <div>
