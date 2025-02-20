@@ -17,8 +17,8 @@ const Navbar = () => {
     // Listen for screen size changes
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-            if (window.innerWidth >= 768) setMenuOpen(false);
+            setIsMobile(window.innerWidth < 769);
+            if (window.innerWidth >= 769) setMenuOpen(false);
         };
 
         window.addEventListener('resize', handleResize);
@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full  mx-auto relative z-[9999]">
-            <div className={`flex justify-between w-full items-center py-2 px-6 relative ${isHome ? (isMobile ? 'bg-white' : 'bg-transparent') : 'bg-white'}`}>
+            <div className={`flex justify-between w-full items-center py-4 px-2 lg:px-0 relative ${isHome ? (isMobile ? 'bg-white' : 'bg-transparent') : 'bg-white'}`}>
                 {/* Logo */}
                 <div>
                     <img
@@ -38,9 +38,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navbar */}
-                <div className='hidden mdl:flex items-center gap-6'>
+                {/* <div className='hidden mdl:flex justify-between w-[75%] items-center '> */}
                     <nav>
-                        <ul className={`flex gap-4 lg:gap-8 items-center transition-all duration-300 ${isHome ? (isMobile ? 'text-black' : 'text-white') : 'text-black'}`}>
+                        <ul className={`hidden mdl:flex gap-4 lg:gap-8 items-center transition-all duration-300 ${isHome ? (isMobile ? 'text-black' : 'text-white') : 'text-black'}`}>
                             <li><Link to='/' >About Us</Link></li>
                             <li><Link to='/'>How it works</Link></li>
                             <li><Link to='/' >FAQs</Link></li>
@@ -49,14 +49,14 @@ const Navbar = () => {
                         </ul>
                     </nav>
                     {/* Call to Action Button */}
-                    <div>
+                    <div className='hidden mdl:block'>
                         <Link to='/'>
                             <CustomButton className={'bg-DeepOrange px-[30px] py-[15px] rounded-full text-white'}>
                                 Book A Call
                             </CustomButton>
                         </Link>
                     </div>
-                </div>
+                {/* </div> */}
 
                 {/* Mobile Menu Icon */}
                 <div className='mdl:hidden z-[9999]'>

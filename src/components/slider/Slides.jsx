@@ -6,7 +6,7 @@ const Slides = () => {
   const slideLength = slides.length;
 
   const autoScroll = true;
-  const intervalTime = 100000;
+  const intervalTime = 5000;
   const slideInterval = useRef(null);
 
   const nextSlide = () => {
@@ -34,7 +34,7 @@ const Slides = () => {
             backgroundImage: `url(${slide.background})`,
           }}
         >
-          <div className="content">
+          <div className=" max-w-[80rem] mx-auto  content">
             {slide.nav}
             {slide.text}
           </div>
