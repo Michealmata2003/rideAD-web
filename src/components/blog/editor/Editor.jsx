@@ -19,7 +19,7 @@ const Editor = () => {
                     {
                         NewsLetter.map((news, index) => (
                             <div key={index} className='m-auto justify-center w-full p-2'>
-                                <img src={news.image} alt="" />
+                                <img className='w-full m-auto justify-center'  src={news.image} alt="" />
                                 <div className='py-2'>
                                     <h4 className='font-semibold text-xl'>{news.title}</h4>
                                     <p className='text-[16px]'>{news.text}</p>

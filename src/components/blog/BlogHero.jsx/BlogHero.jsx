@@ -11,7 +11,7 @@ const BlogHero = () => {
                 <div className='py-[4rem] bg-Fade w-full justify-center rounded-md m-auto text-center'>
                     <p className='text-[18px] py-4 tracking-[.5rem] '>Insights & Stories</p>
 
-                    <h1 className='font-bold text-3xl w-full mdl:w-2/5 m-auto flex'>Explore the latest trends in mobility tech and advertising.</h1>
+                    <h1 className='font-bold px-4 mdl:px-0 text-3xl w-full mdl:w-2/5 m-auto flex'>Explore the latest trends in mobility tech and advertising.</h1>
 
                 </div>
 
