@@ -18,7 +18,7 @@ const Editor = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 mdl:grid-cols-4 gap-[1rem] py-8'>
                     {
                         NewsLetter.map((news, index) => (
-                            <div key={index}>
+                            <div key={index} className='m-auto justify-center w-full p-2'>
                                 <img src={news.image} alt="" />
                                 <div className='py-2'>
                                     <h4 className='font-semibold text-xl'>{news.title}</h4>
